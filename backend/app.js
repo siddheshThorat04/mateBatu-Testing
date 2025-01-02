@@ -31,7 +31,7 @@ app.use("/api/auth",authRoutes)
 app.use("/api/admin",adminRoutes)
 app.use("/api/user",userRoutes)
 
-const port = process.env.PORT 
+const port = process.env.PORT || 8080 
 
 server.listen(port, () => {
     connectDb()
